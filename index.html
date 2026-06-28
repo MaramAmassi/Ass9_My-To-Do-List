@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="todo-container">
+
+        <header class="todo-header">
+            <h2>My To-Do List</h2>
+            <p>Stay organized and productive</p>
+        </header>
+
+        <div class="input-section">
+
+            <input
+                type="text"
+                id="task-input"
+                placeholder="What needs to be done?"
+                dir="auto">
+
+            <button id="add-btn">
+                Add
+            </button>
+
+        </div>
+
+        <div class="controls-section">
+
+            <div class="filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all">
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="active">
+                    Active
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="completed">
+                    Completed
+                </button>
+
+            </div>
+
+            <div class="action-buttons">
+
+                <button id="clear-completed-btn">
+                    Clear Completed
+                </button>
+
+                <button id="clear-all-btn">
+                    Clear All
+                </button>
+
+            </div>
+
+        </div>
+
+        <ul id="tasks-list" class="tasks-list"></ul>
+
+        <div id="empty-state" class="empty-state">
+            <p>No tasks yet. Add one above!</p>
+        </div>
+
+        <footer class="todo-footer">
+            <span id="remaining-count">0</span>
+            tasks remaining
+        </footer>
+
+    </main>
+
+    <footer class="page-footer">
+        All Rights Reserved © 2026 |
+        Al-Aqsa University — Web Development  By Maram Amassi
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
